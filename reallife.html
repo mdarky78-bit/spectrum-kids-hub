@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Life Scenarios — Spectrum Kids Hub</title>
+  <meta name="description" content="Real-life scenario cards for parents of neurodiverse children aged 2–10. What's actually happening in those difficult moments — and what to try instead.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Spectrum Kids Hub</a>
+      <button class="nav__burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="understanding.html">Understanding</a></li>
+        <li><a href="reallife.html" class="active-reallife">Real Life</a></li>
+        <li><a href="toolkit.html">Toolkit</a></li>
+        <li><a href="nourish.html">Nourish</a></li>
+        <li><a href="community.html">Community</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero hero--reallife">
+    <div class="hero__inner">
+      <span class="hero__tagline" style="background: var(--reallife-bg); color: var(--reallife); border-color: rgba(192,57,43,0.2);">Real Life</span>
+      <h1>Those Moments That Catch You Off Guard</h1>
+      <p class="hero__lead">Every family has them. The meltdown in the supermarket. The morning routine that takes two hours. The party that didn't go to plan. These cards won't make those moments disappear — but they might help you understand what's actually going on.</p>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="section">
+    <div class="container">
+      <div class="intro-text" style="margin-bottom: 2rem;">
+        <p>These cards are built around the situations parents describe most often — the ones that are hard to explain to people who haven't lived them, the ones that happen at exactly the wrong moment. Each card explains what's neurologically happening, what tends to make things worse, and what's worth trying instead.</p>
+        <p>Click any card to read the full version.</p>
+      </div>
+
+      <div class="callout">
+        <p><em>These scenario cards are for information and signposting only. They are not medical advice. Always consult your GP or a qualified health professional with individual concerns. Content informed by NHS, NICE, the National Autistic Society, YoungMinds, ADHD UK, and Gov.uk.</em></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scenario Cards -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="scenario-grid">
+
+        <!-- Card 1 -->
+        <div class="scenario-card" id="card-1">
+          <div class="scenario-card__header" onclick="toggleCard('card-1')" role="button" tabindex="0" aria-expanded="false" onkeydown="if(event.key==='Enter'||event.key===' ')toggleCard('card-1')">
+            <span class="scenario-card__title">1. Meltdown in the Supermarket</span>
+            <span class="scenario-card__toggle" aria-hidden="true">+</span>
+          </div>
+          <div class="scenario-card__body">
+            <div class="scenario-card__what">
+              The supermarket is, neurologically speaking, a genuinely hostile environment for a child with sensory sensitivities. Bright fluorescent lighting, competing smells, the hum of refrigerators, announcements over the tannoy, the visual chaos of full shelves, the unpredictability of other shoppers — all of it arriving at once, with no off switch. For a child whose nervous system is already working overtime to process the world, this isn't drama. It's overload. The meltdown isn't a choice. It's a system that has hit its limit.
+            </div>
+            <div class="scenario-card__section">
+              <h4>What not to do</h4>
+              <ul>
+                <li>Telling them to 'calm down' or 'stop it' rarely helps and can escalate things — when a child is in full meltdown, the rational, listening part of their brain is temporarily offline.</li>
+                <li>Trying to reason with them, explain consequences, or bribe them in the moment is unlikely to land. Save the conversation for later, when everyone is regulated.</li>
+                <li>Rushing them or pulling them quickly through the rest of the shop adds more sensory input to an already overwhelmed system.</li>
+              </ul>
+            </div>
+            <div class="scenario-card__section">
+              <h4>What to try instead</h4>
+              <ul>
+                <li>If you can, leave. The shop will still be there. Nothing in your trolley is worth more than getting your child out of the environment that's overwhelming them.</li>
+                <li>Find somewhere quieter — the car, outside, a corner away from the main aisles — and just be present without demands. Speak quietly, or not at all.</li>
+                <li>For next time: earlier in the day tends to be quieter. Noise-cancelling headphones can make a real difference. A visual list your child can help tick off gives them a sense of control. Shorter trips, more often, rather than one big weekly shop.</li>
+                <li>If this is a regular pattern, it's worth mentioning to your GP or SENCO — it may be a sign of sensory processing differences worth exploring.</li>
+              </ul>
+            </div>
+            <div class="scenario-card__kind">A kind reminder: Everyone in that supermarket has had a hard parenting day. You are not being judged as harshly as you think you are.</div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="scenario-card" id="card-2">
+          <div class="scenario-card__header" onclick="toggleCard('card-2')" role="button" tabindex="0" aria-expanded="false" onkeydown="if(event.key==='Enter'||event.key===' ')toggleCard('card-2')">
+            <span class="scenario-card__title">2. The Morning Routine That Takes Two Hours</span>
+            <span class="scenario-card__toggle" aria-hidden="true">+</span>
+          </div>
+          <div class="scenario-card__body">
+            <div class="scenario-card__what">
+              For a child with ADHD, the morning routine isn't just a series of simple tasks — it's a sequence of decisions and transitions, each of which requires the brain to initiate, switch focus, and stay on track. Those are exactly the executive functions that ADHD affects most. Getting dressed requires starting, then continuing, then finishing — and at any point, something more interesting will capture their attention and the whole thing collapses. It isn't laziness or defiance. It's a brain that genuinely struggles to manage the steps involved.
+            </div>
+            <div class="scenario-card__section">
+              <h4>What not to do</h4>
+              <ul>
+                <li>Repeating the same instruction louder each time tends to create anxiety and conflict without actually helping them get their shoes on.</li>
+                <li>Threatening consequences ('we're leaving without you') can spike anxiety in a way that makes dysregulation more likely, not less.</li>
+                <li>Taking over everything for them every morning solves today's problem but doesn't build any of the scaffolding they need for next time.</li>
+              </ul>
+            </div>
+            <div class="scenario-card__section">
+              <h4>What to try instead</h4>
+              <ul>
+                <li>Strip the routine right down. What are the absolute non-negotiables before leaving the house? Focus on those, and let some things go — hair doesn't have to be perfect.</li>
+                <li>Visual checklists work well for many children with ADHD: a simple list of pictures or words on the wall that they can tick off themselves.</li>
+                <li>Try working backwards from the leaving time: 'We get in the car at 8:30. What needs to happen before that?' Breaking it into two or three chunks is often more manageable.</li>
+                <li>Where possible, do as much as you can the night before — bag packed, PE kit out, choice of breakfast decided.</li>
+              </ul>
+            </div>
+            <div class="scenario-card__kind">A kind reminder: If your mornings are chaos right now, it doesn't mean you've failed at routines. It might mean your child needs a different kind of structure — and that's worth knowing.</div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="scenario-card" id="card-3">
+          <div class="scenario-card__header" onclick="toggleCard('card-3')" role="button" tabindex="0" aria-expanded="false" onkeydown="if(event.key==='Enter'||event.key===' ')toggleCard('card-3')">
+            <span class="scenario-card__title">3. They Won't Wear That</span>
+            <span class="scenario-card__toggle" aria-hidden="true">+</span>
+          </div>
+          <div class="scenario-card__body">
+            <div class="scenario-card__what">
+              For children with sensory sensitivities, the physical sensation of clothing isn't background noise — it's front and centre. A seam in a sock can feel genuinely painful, not mildly annoying. A scratchy label can feel like something is burning their skin. Waistbands, certain fabrics, tight sleeves: all of it can cause real sensory distress that is hard to explain and easy for adults to dismiss as fussiness. The child refusing to get dressed in the morning may be doing so because the clothes you've put out are genuinely uncomfortable for their nervous system.
+            </div>
+            <div class="scenario-card__section">
+              <h4>What not to do</h4>
+              <ul>
+                <li>Telling them they're being silly or dramatic doesn't help — from their sensory experience, they're not.</li>
+                <li>Forcing clothing onto a child in sensory distress tends to create a much bigger battle and can build lasting anxiety around getting dressed.</li>
+                <li>Leaving it entirely to the last minute, then trying to problem-solve an outfit while already running late, is a recipe for a terrible morning.</li>
+              </ul>
+            </div>
+            <div class="scenario-card__section">
+              <h4>What to try instead</h4>
+              <ul>
+                <li>Let them help choose what they wear, within limits. Even young children can be offered two options: 'This one or this one?' — which gives them some control without turning the wardrobe into a full negotiation.</li>
+                <li>Look for seamless socks. They exist, they're widely available, and for many sensory-sensitive children they are genuinely life-changing.</li>
+                <li>Soft fabrics, tagless labels, elasticated waistbands, and clothes that are slightly looser rather than fitted tend to be better tolerated. Once you find brands or items that work, buy multiples.</li>
+                <li>Wash new clothes before they're worn — this softens them and removes any chemical irritants from the fabric.</li>
+              </ul>
+            </div>
+            <div class="scenario-card__kind">A kind reminder: Picking your battles is good parenting, not giving in. The sock thing matters to your child. It's okay if it matters to you too.</div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="scenario-card" id="card-4">
+          <div class="scenario-card__header" onclick="toggleCard('card-4')" role="button" tabindex="0" aria-expanded="false" onkeydown="if(event.key==='Enter'||event.key===' ')toggleCard('card-4')">
+            <span class="scenario-card__title">4. They Seemed Fine at School — Then Fell Apart at Home</span>
+            <span class="scenario-card__toggle" aria-hidden="true">+</span>
+          </div>
+          <div class="scenario-card__body">
+            <div class="scenario-card__what">
+              Many children — particularly those with autism, ADHD, or sensory differences — spend the school day working extremely hard to hold themselves together. They follow instructions, manage transitions, navigate social situations, and regulate their behaviour in an environment that doesn't always feel natural or comfortable. By the time they get home, they have nothing left. Home is safe. You are safe. And so everything they've been holding in all day comes out — usually in the form of meltdowns, tears, aggression, or complete shutdown. This is sometimes called the 'after-school restraint collapse,' and it's very common.
+            </div>
+            <div class="scenario-card__section">
+              <h4>What not to do</h4>
+              <ul>
+                <li>Greeting them with a list of questions ('How was your day? Did anything happen? Did you eat your lunch?') can tip a child who is already at their limit over the edge.</li>
+                <li>Expecting them to go straight into homework or activities after school, without any decompression time, adds demand onto an already exhausted system.</li>
+                <li>Interpreting the home meltdowns as evidence that school must be fine and therefore not worth mentioning to school — this misses the picture entirely.</li>
+              </ul>
+            </div>
+            <div class="scenario-card__section">
+              <h4>What to try instead</h4>
+              <ul>
+                <li>Try a low-demand transition when they come home. Snack, quiet time, something familiar and low-key. No questions for a bit. Just presence.</li>
+                <li>Some children need physical release after school — running outside, jumping on a trampoline, squeezing something. Others need the opposite: a quiet corner, headphones, a familiar screen. You'll know which your child is.</li>
+                <li>Let school know what you're seeing at home. It's relevant information, even if they're not seeing the same behaviour in school. A good SENCO will want to know.</li>
+              </ul>
+            </div>
+            <div class="scenario-card__kind">A kind reminder: The fact that they fall apart with you means you are the safest person in their world. That's hard to hold right now, but it's true.</div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="scenario-card" id="card-5">
+          <div class="scenario-card__header" onclick="toggleCard('card-5')" role="button" tabindex="0" aria-expanded="false" onkeydown="if(event.key==='Enter'||event.key===' ')toggleCard('card-5')">
+            <span class="scenario-card__title">5. The Birthday Party That Didn't Go to Plan</span>
+            <span class="scenario-card__toggle" aria-hidden="true">+</span>
+          </div>
+          <div class="scenario-card__body">
+            <div class="scenario-card__what">
+              Birthday parties for young children tend to involve: loud music, lots of other children, unexpected changes to routine, a departure from the usual eating schedule, unfamiliar environments, party games with complicated rules, high emotional stakes, and a significant amount of excitement and noise all at once. For a child with sensory sensitivities, autism, or ADHD, that is a great deal to manage simultaneously. What looks like a fun treat from the outside can feel genuinely overwhelming from the inside — and the resulting behaviour is often the child's best attempt at coping.
+            </div>
+            <div class="scenario-card__section">
+              <h4>What not to do</h4>
+              <ul>
+                <li>Comparing them to other children at the party or suggesting they 'just join in like everyone else' doesn't address what's actually happening for them.</li>
+                <li>Insisting they participate in everything — the games, the singing, all of it — can turn what might have been a manageable experience into a full crisis.</li>
+                <li>Leaving suddenly mid-meltdown without warning or explanation can increase anxiety around parties and social events in general.</li>
+              </ul>
+            </div>
+            <div class="scenario-card__section">
+              <h4>What to try instead</h4>
+              <ul>
+                <li>If you can, prepare them before you go: show them pictures of where the party is, talk through what might happen, and be honest that some bits might be noisy or busy.</li>
+                <li>It's completely fine to stay at the party, especially with younger children. Being a visible safe base can make the whole thing more manageable.</li>
+                <li>Give them a role or a clear focus — helping hand out food, knowing they can come and sit with you if it gets too much.</li>
+                <li>Leaving a bit early is okay. Getting there for part of it is okay. Their version of joining in might look different to everyone else's — that's okay too.</li>
+              </ul>
+            </div>
+            <div class="scenario-card__kind">A kind reminder: You didn't ruin their childhood by leaving early. You read your child and you responded. That's exactly what they needed.</div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="scenario-card" id="card-6">
+          <div class="scenario-card__header" onclick="toggleCard('card-6')" role="button" tabindex="0" aria-expanded="false" onkeydown="if(event.key==='Enter'||event.key===' ')toggleCard('card-6')">
+            <span class="scenario-card__title">6. She Doesn't Seem to Have Any Friends</span>
+            <span class="scenario-card__toggle" aria-hidden="true">+</span>
+          </div>
+          <div class="scenario-card__body">
+            <div class="scenario-card__what">
+              Some children — particularly those with autism, or girls with ADHD — want friendships very much, but find the unspoken rules of social interaction genuinely confusing. When to speak, how long to speak for, how to enter a game that's already in progress, how to tell if someone wants to keep talking or wants to stop — these things that many children pick up without thinking can feel completely opaque. The child standing at the edge of the playground isn't necessarily unhappy with being alone. But if they're not, that matters.
+            </div>
+            <div class="scenario-card__section">
+              <h4>What not to do</h4>
+              <ul>
+                <li>Telling them to 'just go and ask someone to play' assumes they have the social toolkit to do that — if they did, they probably would have already.</li>
+                <li>Explaining in detail why other children might not want to play with them, even with the best of intentions, risks doing more harm than good.</li>
+                <li>Assuming it will sort itself out without any support — for some children it does, for others it really doesn't.</li>
+              </ul>
+            </div>
+            <div class="scenario-card__section">
+              <h4>What to try instead</h4>
+              <ul>
+                <li>Structured activities outside school — a club, a class, a team — often work better for friendship-building than the open-ended social chaos of the playground. There's a shared focus, rules that are clear, and something to talk about.</li>
+                <li>Some children do better with one friend than with a group. Arranging one-to-one playdates with a child they seem comfortable with is often more manageable than trying to integrate into an existing group.</li>
+                <li>Talk to the school SENCO. Schools can do a lot to support social inclusion — lunch clubs, peer mentoring, supported play at break times. But they often need you to flag it first.</li>
+                <li>If your child is masking at school and struggling socially, it's worth mentioning when you speak to the GP about assessment.</li>
+              </ul>
+            </div>
+            <div class="scenario-card__kind">A kind reminder: Watching your child struggle to connect with other children is one of the loneliest parts of this. You're allowed to find it hard too.</div>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="scenario-card" id="card-7">
+          <div class="scenario-card__header" onclick="toggleCard('card-7')" role="button" tabindex="0" aria-expanded="false" onkeydown="if(event.key==='Enter'||event.key===' ')toggleCard('card-7')">
+            <span class="scenario-card__title">7. Food Has Become a Battleground</span>
+            <span class="scenario-card__toggle" aria-hidden="true">+</span>
+          </div>
+          <div class="scenario-card__body">
+            <div class="scenario-card__what">
+              Extreme food selectivity in children can have a number of causes, and it's important not to assume it's simply fussiness or a phase. For children with sensory sensitivities, the texture, smell, colour, temperature, or even the sound of food being chewed can trigger genuine disgust responses that are hard to override. For children with autism, the rigidity around food may be connected to the need for predictability and routine — a familiar food in the familiar way provides safety when the world feels unpredictable. For children with ADHD, impulsivity and the effort of sitting still for meals can also make mealtimes particularly fraught.
+            </div>
+            <div class="scenario-card__section">
+              <h4>What not to do</h4>
+              <ul>
+                <li>'They'll eat when they're hungry enough' is sometimes true, but for children with genuine sensory or anxiety-based food avoidance, it often isn't — and prolonged battles around food can make things significantly worse.</li>
+                <li>Disguising rejected foods inside accepted ones may work occasionally, but when discovered, it can seriously damage a child's trust around eating.</li>
+                <li>Turning every meal into a negotiation, with rewards and consequences, can create anxiety around mealtimes that outlasts the original issue.</li>
+              </ul>
+            </div>
+            <div class="scenario-card__section">
+              <h4>What to try instead</h4>
+              <ul>
+                <li>Reduce the pressure wherever you can. A calm mealtime with one accepted food on the plate alongside something new is better than a stressful mealtime with a plate of things they won't eat.</li>
+                <li>The 'food chaining' approach — very gradually introducing small variations of accepted foods — can help over time, but it takes patience and consistency.</li>
+                <li>If food selectivity is significantly impacting your child's nutrition or daily life, speak to your GP about a referral to a paediatric dietitian or an occupational therapist with experience in sensory feeding difficulties.</li>
+                <li>Let them have some control: choosing their own plate, serving their own food, having the same thing for three weeks in a row if that's what works right now.</li>
+              </ul>
+            </div>
+            <div class="scenario-card__kind">A kind reminder: Feeding your child is supposed to feel simple. When it doesn't, it can be quietly exhausting in a way that's hard to explain to anyone who hasn't lived it.</div>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="scenario-card" id="card-8">
+          <div class="scenario-card__header" onclick="toggleCard('card-8')" role="button" tabindex="0" aria-expanded="false" onkeydown="if(event.key==='Enter'||event.key===' ')toggleCard('card-8')">
+            <span class="scenario-card__title">8. He Can't Lose. At Anything. Ever.</span>
+            <span class="scenario-card__toggle" aria-hidden="true">+</span>
+          </div>
+          <div class="scenario-card__body">
+            <div class="scenario-card__what">
+              Difficulty managing losing, frustration, or perceived failure is very common in children with ADHD and autism. For children with ADHD, the emotional regulation system is part of what the condition affects — big feelings arrive fast, feel enormous, and are harder to manage than they would be for a neurotypical child. For children with autism, losing can feel like a violation of expected order, or trigger genuine distress rather than ordinary disappointment. This isn't about being spoilt. It's about a nervous system that processes frustration and disappointment differently.
+            </div>
+            <div class="scenario-card__section">
+              <h4>What not to do</h4>
+              <ul>
+                <li>Telling them they need to be a 'good sport' or 'just deal with it' doesn't give them anything to work with — they probably already know they should be calmer. The problem is they can't get there from here without help.</li>
+                <li>Removing games and competitive situations entirely means they never get the chance to practise — but forcing too many without support is likely to lead to repeated meltdowns.</li>
+                <li>Humiliating them or laughing at the reaction, even affectionately, can increase shame and make the behaviour harder to address.</li>
+              </ul>
+            </div>
+            <div class="scenario-card__section">
+              <h4>What to try instead</h4>
+              <ul>
+                <li>Practise low-stakes losing at home, where the emotional stakes are lower and you can help them process the feelings in real time. Name the feeling: 'That's really frustrating. It makes sense you feel annoyed.'</li>
+                <li>Choose games with a luck element rather than pure skill to start with — it's easier to lose to a dice than to a sibling who's better at chess.</li>
+                <li>Give them an acceptable script: 'That was hard to lose. I'm going to take a minute.' Knowing what to do with the feeling makes a difference.</li>
+                <li>Celebrate the moments when they manage it, even imperfectly.</li>
+              </ul>
+            </div>
+            <div class="scenario-card__kind">A kind reminder: The child who cannot lose today is learning. They are not going to be like this forever. You are not raising a monster — you are raising someone whose feelings are very big and who needs more time to learn what to do with them.</div>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="scenario-card" id="card-9">
+          <div class="scenario-card__header" onclick="toggleCard('card-9')" role="button" tabindex="0" aria-expanded="false" onkeydown="if(event.key==='Enter'||event.key===' ')toggleCard('card-9')">
+            <span class="scenario-card__title">9. The Transition Meltdown</span>
+            <span class="scenario-card__toggle" aria-hidden="true">+</span>
+          </div>
+          <div class="scenario-card__body">
+            <div class="scenario-card__what">
+              Transitions — moving from one activity to another, leaving somewhere enjoyable, changing from one part of the day to the next — are disproportionately difficult for many children with autism, ADHD, and sensory processing differences. For children with autism, transitions can feel threatening because they interrupt predictability and routine. For children with ADHD, shifting attention away from something absorbing is neurologically difficult — the brain genuinely resists switching, even when the child understands on some level that they need to. The meltdown when it's time to leave the park, turn off the game, or stop what they're doing isn't manipulation. It's a brain struggling to shift gears.
+            </div>
+            <div class="scenario-card__section">
+              <h4>What not to do</h4>
+              <ul>
+                <li>Stopping an activity without warning tends to make the transition far harder. 'We're leaving NOW' after no preparation is asking a lot of a brain that finds switching inherently difficult.</li>
+                <li>Yanking them away physically when they're absorbed tends to trigger rather than prevent a meltdown.</li>
+                <li>Arguing about the transition in the moment is rarely productive once the window has closed.</li>
+              </ul>
+            </div>
+            <div class="scenario-card__section">
+              <h4>What to try instead</h4>
+              <ul>
+                <li>Give clear advance warnings: 'Ten more minutes, then we're going.' Then five. Then one. This isn't about being a human alarm clock forever — it's scaffolding that, over time, many children internalise.</li>
+                <li>Some children respond well to a physical timer they can see: an hourglass timer or a visual countdown. Externalising the time makes it feel less arbitrary and less like you're the one ending the fun.</li>
+                <li>Give them something to look forward to after the transition — not a bribe, just an anchor: 'After we leave the park, we're going home for a snack and you can choose what we have.'</li>
+                <li>Try to arrive with a plan for leaving already in place: 'When the alarm goes, we go.'</li>
+              </ul>
+            </div>
+            <div class="scenario-card__kind">A kind reminder: If you've given five warnings and it still ended in tears, you didn't do it wrong. Some days are just hard days.</div>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="scenario-card" id="card-10">
+          <div class="scenario-card__header" onclick="toggleCard('card-10')" role="button" tabindex="0" aria-expanded="false" onkeydown="if(event.key==='Enter'||event.key===' ')toggleCard('card-10')">
+            <span class="scenario-card__title">10. "Why Is She So Different at Home?"</span>
+            <span class="scenario-card__toggle" aria-hidden="true">+</span>
+          </div>
+          <div class="scenario-card__body">
+            <div class="scenario-card__what">
+              This one is for the parents whose child gets glowing reports from school — 'absolutely fine,' 'no concerns,' 'a pleasure to have in class' — while at home things are falling apart. It can feel maddening, even isolating, as though no one believes what you're living with. But it makes neurological sense. Many children — particularly girls with autism or inattentive ADHD — spend enormous amounts of energy masking at school: copying other children's social behaviour, working harder than anyone realises to follow instructions and hold things together, suppressing sensory reactions, performing normality. By the time they get home, the mask comes off. You are seeing the real picture.
+            </div>
+            <div class="scenario-card__section">
+              <h4>What not to do</h4>
+              <ul>
+                <li>Concluding that because school says everything is fine, it must be fine — and therefore the problem is something you're doing at home. The two environments are different, the demands are different.</li>
+                <li>Dismissing school's observations entirely — the information they have is still valuable, even if it's incomplete.</li>
+                <li>Waiting indefinitely in the hope that it will resolve on its own. If your child is masking heavily at school, that is genuinely exhausting for them, and it has real consequences over time.</li>
+              </ul>
+            </div>
+            <div class="scenario-card__section">
+              <h4>What to try instead</h4>
+              <ul>
+                <li>Keep notes of what you're seeing at home — specific incidents, patterns, how often, how long. This is the evidence that matters when you speak to a GP or SENCO.</li>
+                <li>Share what you're observing directly with the school, and ask them to look out for the subtler signs: the child who is always watching others before they act, who seems exhausted by lunchtime, who avoids unstructured social time.</li>
+                <li>Trust your instincts. You are not an overanxious parent for noticing a pattern. You are the expert on your child.</li>
+                <li>Seek a GP referral, and when you go, talk about what happens at home, not just what school is reporting.</li>
+              </ul>
+            </div>
+            <div class="scenario-card__kind">A kind reminder: You are not making it up. The fact that no one else sees it doesn't make it less real. It makes it more important that you keep saying it.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo">Spectrum Kids Hub</a>
+          <p>Real support for real families</p>
+        </div>
+        <div class="footer__nav">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="understanding.html">Understanding</a></li>
+            <li><a href="reallife.html">Real Life</a></li>
+            <li><a href="toolkit.html">Toolkit</a></li>
+            <li><a href="nourish.html">Nourish</a></li>
+            <li><a href="community.html">Community</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__disclaimer">
+        <p><em>Spectrum Kids Hub is an information and signposting resource for parents. Nothing on this site constitutes medical advice. Always consult your GP or a qualified health professional with concerns about your child. All UK resources listed were verified as live and current in March 2026. If you find a link that no longer works, please contact us.</em></p>
+        <p class="footer__nutricore">Nutritional support by <a href="https://nutricore.health" target="_blank" rel="noopener">Nutricore Health</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

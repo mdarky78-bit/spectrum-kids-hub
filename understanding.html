@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Understanding Neurodiversity — Spectrum Kids Hub</title>
+  <meta name="description" content="Plain-English guides to ADHD, autism and sensory processing differences in young children. For parents of children aged 2–10.">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .understanding-nav {
+      background: var(--off-white);
+      border-bottom: 2px solid var(--understanding-bg);
+      padding: 0;
+    }
+    .tab-btn { border-radius: 0; padding: 1rem 1.5rem; border-bottom: 3px solid transparent; }
+    .tab-btn.active { background: var(--warm-white); color: var(--understanding); border-bottom-color: var(--understanding); }
+    .tab-panel { padding: 0; }
+    .tab-container { border: none; }
+    .section-label {
+      display: inline-block;
+      font-family: var(--font-head);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--understanding);
+      background: var(--understanding-bg);
+      padding: 0.3rem 0.9rem;
+      border-radius: 20px;
+      margin-bottom: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Spectrum Kids Hub</a>
+      <button class="nav__burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="understanding.html" class="active-understanding">Understanding</a></li>
+        <li><a href="reallife.html">Real Life</a></li>
+        <li><a href="toolkit.html">Toolkit</a></li>
+        <li><a href="nourish.html">Nourish</a></li>
+        <li><a href="community.html">Community</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero hero--understanding">
+    <div class="hero__inner">
+      <span class="hero__tagline" style="background: var(--understanding-bg); color: var(--understanding); border-color: rgba(85,60,154,0.2);">Understanding Neurodiversity</span>
+      <h1>Honest guides. No jargon.</h1>
+      <p class="hero__lead">Plain-English information about autism, ADHD, and sensory processing differences for parents of children aged 2–10. Not medical advice — just clear information to help you feel more confident about what to do next.</p>
+    </div>
+  </section>
+
+  <!-- Tabs -->
+  <div class="container" style="padding-top: 2rem; padding-bottom: 0;">
+    <div class="tab-container understanding-nav" id="understanding-tabs">
+      <div class="tabs" role="tablist">
+        <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="tab-adhd" id="btn-adhd" onclick="switchTab('adhd')">ADHD</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-asd" id="btn-asd" onclick="switchTab('asd')">Autism / ASD</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-sensory" id="btn-sensory" onclick="switchTab('sensory')">Sensory Processing</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── ADHD Tab ──────────────────────────────────────────── -->
+  <div id="tab-adhd" class="tab-panel active" role="tabpanel" aria-labelledby="btn-adhd">
+    <div class="page-content">
+
+      <div class="callout callout--important">
+        <p><strong>This page is for information and signposting only. It is not medical advice.</strong> If you have concerns about your child, please speak to your GP or your child's school SENCO.</p>
+      </div>
+
+      <div class="intro-text" style="margin-bottom: 2.5rem;">
+        <p>If you've found your way to this page, chances are you're lying awake wondering whether what you're seeing in your child is something more than just 'being a bit lively'. You might feel like no one quite believes how exhausting things can be. You might have Googled yourself in circles.</p>
+        <p>Whatever brought you here, you're not imagining things. And you're not alone.</p>
+      </div>
+
+      <!-- Section 1 -->
+      <div class="content-section">
+        <h2>1. What ADHD Actually Looks Like Day to Day</h2>
+        <p>Textbook descriptions of ADHD talk about 'inattention', 'hyperactivity' and 'impulsivity'. That's all true, but it doesn't quite capture what it looks like when you're living with it.</p>
+        <p>In real life, ADHD might look like:</p>
+        <ul>
+          <li>A child who can't seem to finish getting dressed in the morning, even after being asked five times — not because they won't, but because every small thing pulls their attention somewhere else.</li>
+          <li>Explosive meltdowns that come from nowhere, especially when routines change or they've had a long day.</li>
+          <li>A child who is utterly absorbed in a LEGO build for three hours, then can't sit still for five minutes of homework. (Yes, this can both be true — ADHD is not about a short attention span, it's about a brain that struggles to control where that attention goes.)</li>
+          <li>Blurting things out mid-conversation, pushing to the front of queues, grabbing things from other children — not from malice, but because the impulse arrives before the thought.</li>
+          <li>A child who seems not to hear you even from a metre away, but who can tell you every detail of a film they watched three weeks ago.</li>
+          <li>Big, intense feelings — excitement, frustration, sadness — that arrive quickly, feel enormous, and can be hard to manage.</li>
+          <li>Difficulty settling to sleep, and exhaustion that makes everything harder.</li>
+        </ul>
+        <div class="callout callout--important">
+          <p><em>It's also worth knowing that ADHD brains can bring real strengths: creativity, passion, energy, thinking outside the box, empathy, and incredible enthusiasm for things that capture their interest. A diagnosis doesn't reduce your child to a list of difficulties.</em></p>
+        </div>
+      </div>
+
+      <!-- Section 2 -->
+      <div class="content-section">
+        <h2>2. Early Signs to Look Out For</h2>
+        <p>Every child is different, and many of these behaviours are completely normal in younger children. Age matters a lot. What matters is whether the behaviours are significantly more frequent or intense than other children the same age, and whether they're showing up in more than one setting.</p>
+
+        <div class="age-step">
+          <span class="age-step__label" style="background: var(--understanding);">Ages 2–3 · Toddlers</span>
+          <p>All toddlers are busy, impulsive, and emotionally unpredictable — that's normal development. Signs that might be worth noting include:</p>
+          <ul>
+            <li>Unusually high activity levels even compared to other toddlers — always running, climbing, rarely settling.</li>
+            <li>Severe, frequent tantrums that are hard to calm.</li>
+            <li>Very short attention span even for activities they enjoy.</li>
+            <li>Sleep difficulties that are particularly persistent.</li>
+          </ul>
+          <p>At this age, most professionals will want to wait and observe rather than assess for ADHD, and that's appropriate. But it's still worth raising concerns with your GP or health visitor.</p>
+        </div>
+
+        <div class="age-step">
+          <span class="age-step__label" style="background: var(--understanding);">Ages 4–5 · Early Years / Starting School</span>
+          <p>Starting nursery or Reception often brings things into sharper focus. You might notice:</p>
+          <ul>
+            <li>Difficulty sitting for short carpet times when other children can manage.</li>
+            <li>Struggles with transitions — moving from one activity to another, or coming indoors from play.</li>
+            <li>Impulsive behaviour that leads to accidents or conflict — grabbing toys, running into the road, not waiting their turn.</li>
+            <li>Finding it very hard to follow more than one instruction at a time.</li>
+            <li>Emotional outbursts that seem disproportionate to the situation.</li>
+            <li>Teachers commenting that your child seems to be 'in their own world' or 'struggling to focus'.</li>
+          </ul>
+        </div>
+
+        <div class="age-step">
+          <span class="age-step__label" style="background: var(--understanding);">Ages 6–10 · Primary School</span>
+          <p>This is often the age when ADHD becomes clearer, as the demands of school increase. You might see:</p>
+          <ul>
+            <li>Persistent difficulty finishing written work, even when they clearly know the answers.</li>
+            <li>Losing things constantly — PE kit, lunchbox, homework, pencil case.</li>
+            <li>Forgetting instructions almost immediately.</li>
+            <li>Difficulties with friendships due to impulsive behaviour or finding it hard to read social cues.</li>
+            <li>What looks like laziness or carelessness in schoolwork, when really the child is struggling to organise their thoughts.</li>
+            <li>A child who seems exhausted at the end of the school day because maintaining focus has taken so much effort.</li>
+          </ul>
+        </div>
+
+        <div class="callout callout--important">
+          <div class="callout__title">Important</div>
+          <p>Many children go through phases of high energy or inattention — especially if they're tired, anxious, or going through a change at home. The NHS notes that this does not automatically mean ADHD. What clinicians look for is a consistent pattern across multiple settings that is having a real impact on your child's daily life.</p>
+          <p class="small">Source: NHS, 'ADHD in children and young people'</p>
+        </div>
+      </div>
+
+      <!-- Section 3 -->
+      <div class="content-section">
+        <h2>3. How ADHD Can Look Different in Girls and Boys</h2>
+        <p>One of the most important things to understand about ADHD is that the 'classic' picture — the very active, impulsive, disruptive child — is more likely to describe a boy. Girls are significantly less likely to be diagnosed, and often much later in life, because their ADHD can look quite different.</p>
+        <p>The NHS explicitly notes that "ADHD is thought to be recognised less often in girls than boys" and that girls "more commonly have inattentive symptoms and these can be harder to recognise."</p>
+        <div style="overflow-x: auto;">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>More commonly seen in boys</th>
+                <th>More commonly seen in girls</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Visible hyperactivity — running, climbing, can't sit still</td><td>Daydreaming, drifting off, seeming 'away with the fairies'</td></tr>
+              <tr><td>Impulsive, disruptive behaviour in class</td><td>Quiet inattentiveness that's easy to overlook</td></tr>
+              <tr><td>Blurting out, interrupting others</td><td>Excessive chattiness or emotional sensitivity</td></tr>
+              <tr><td>Physical aggression or conflict with peers</td><td>Anxious or perfectionistic behaviour</td></tr>
+              <tr><td>Symptoms more easily noticed by teachers</td><td>Struggling internally but appearing to cope</td></tr>
+              <tr><td>More likely to be referred for assessment earlier</td><td>Often diagnosed later — sometimes not until adulthood</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Girls with ADHD often work incredibly hard to mask their difficulties — they may appear fine at school, then come home and fall apart. This is sometimes called 'masking' and it is genuinely exhausting for them.</p>
+        <p>If you have a daughter who seems to 'hold it together' in public but is increasingly anxious, overwhelmed, or struggling socially, it's worth considering ADHD alongside other possibilities.</p>
+      </div>
+
+      <!-- Section 4 -->
+      <div class="content-section">
+        <h2>4. What Parents Often Say</h2>
+        <div class="voices-grid" style="--community: var(--understanding); --community-bg: var(--understanding-bg);">
+          <div class="voice-card" style="background: var(--understanding-bg); border-color: var(--understanding);">
+            <p>"I know my child isn't naughty. They're not trying to be difficult. But I can't explain to people why the simplest morning routine takes two hours and ends in everyone in tears."</p>
+          </div>
+          <div class="voice-card" style="background: var(--understanding-bg); border-color: var(--understanding);">
+            <p>"The teacher keeps saying he's 'bright but easily distracted'. I feel like I'm the only one who can see that he's really struggling, not just being a bit silly."</p>
+          </div>
+          <div class="voice-card" style="background: var(--understanding-bg); border-color: var(--understanding);">
+            <p>"She's so quiet at school. Her teacher says she's fine. But at home she's completely overwhelmed by everything and I feel like I'm failing her somehow."</p>
+          </div>
+          <div class="voice-card" style="background: var(--understanding-bg); border-color: var(--understanding);">
+            <p>"I was told he'd grow out of it. He's seven now. He hasn't grown out of it."</p>
+          </div>
+        </div>
+        <div class="callout callout--important" style="margin-top: 1.5rem;">
+          <p>If any of those land with you, that matters. You are the expert on your child. Trusting your instincts enough to seek more information is not overreacting.</p>
+        </div>
+      </div>
+
+      <!-- Section 5 -->
+      <div class="content-section">
+        <h2>5. The Difference Between Traits and a Diagnosis</h2>
+        <p>Many people — children and adults alike — have some ADHD-like traits. Lots of children are impulsive, distractible, or find it hard to sit still. Traits exist on a spectrum. Having some of these traits does not mean your child has ADHD.</p>
+        <p>A formal diagnosis is reached when traits are:</p>
+        <ul>
+          <li>Significantly more frequent or intense than is typical for the child's age.</li>
+          <li>Present in more than one setting (for example, both at home and at school, not just one).</li>
+          <li>Causing meaningful difficulties in the child's daily life — in learning, friendships, or family life.</li>
+          <li>Not better explained by something else, such as anxiety, a sleep problem, or a difficult life event.</li>
+        </ul>
+        <div class="callout callout--important">
+          <p>YoungMinds notes that "parents and young people who do seek diagnosis can find it helps them access the right support, understand and manage challenges, and identify individual strengths."</p>
+          <p class="small">Source: YoungMinds, 'Help Your Child With ADHD'</p>
+        </div>
+      </div>
+
+      <!-- Section 6 -->
+      <div class="content-section" id="assessment">
+        <h2>6. What to Do First in the UK</h2>
+        <ol class="steps">
+          <li>
+            <h3>Talk to your child's school</h3>
+            <p>Speak to your child's class teacher and, particularly, the school SENCO (Special Educational Needs Co-ordinator). Every school in England, Wales and Scotland must have one. The SENCO can tell you whether they've noticed similar concerns, put support in place now without a diagnosis, and write a summary to support a GP referral.</p>
+          </li>
+          <li>
+            <h3>See your GP</h3>
+            <p>Your GP cannot diagnose ADHD, but they are the gateway to a formal assessment. Bring notes about what you've been observing at home. Ask the SENCO to write something you can take with you. Be specific about the impact on daily life, not just the behaviours themselves.</p>
+          </li>
+          <li>
+            <h3>The NHS assessment pathway</h3>
+            <p>Once a referral is made, your child will go on a waiting list for a specialist assessment. Waiting times vary across the UK and can be long in some areas. During the assessment, a specialist will talk with you, gather information from school, and consider other possible explanations.</p>
+          </li>
+        </ol>
+
+        <div class="callout callout--rights">
+          <div class="callout__title">Right to Choose — England only</div>
+          <p>If you are based in England, you have a legal right to choose your mental healthcare provider under the NHS Right to Choose scheme. This means that if waiting times in your area are very long, you may be able to request referral to an alternative NHS-commissioned service. ADHD UK has a dedicated page explaining this option at <strong>adhduk.co.uk</strong>.</p>
+          <p class="small">Note: From 2025/26, NHS England has asked local ICBs to set activity limits on Right to Choose assessments. Check current availability with your GP. The situation is changing rapidly.</p>
+        </div>
+
+        <div class="callout callout--note">
+          <div class="callout__title">Scotland, Wales and Northern Ireland</div>
+          <p>England, Wales and Northern Ireland follow NICE guidelines for ADHD. Scotland has its own national guidance. The referral process is broadly similar, but local pathways vary. Contact your GP or local council for area-specific information.</p>
+        </div>
+
+        <div class="callout callout--important">
+          <div class="callout__title">Can I get support before a diagnosis?</div>
+          <p>Yes. You don't need to wait for a diagnosis to start getting support. Schools can put adjustments in place without one. Your local council's SEND Local Offer lists local services and resources. NICE guidelines also recommend that parents should be offered group-based ADHD-focused support without waiting for a formal diagnosis if their child's difficulties are affecting family life.</p>
+        </div>
+      </div>
+
+      <!-- Section 7 -->
+      <div class="content-section">
+        <h2>7. "You're Not Imagining It"</h2>
+        <div class="callout callout--important">
+          <p>This section is here because we know how many parents arrive at this point having spent months (sometimes years) being told: "All children are like that." "They'll settle when they get used to school." "You just need to be more consistent."</p>
+          <p><strong>Those words can make you doubt yourself. Please don't.</strong></p>
+        </div>
+        <ul>
+          <li>ADHD is a recognised neurodevelopmental condition. It is not caused by bad parenting, too much screen time, sugar, or a lack of discipline.</li>
+          <li>ADHD has a strong genetic component. It tends to run in families, often undiagnosed.</li>
+          <li>Children with ADHD are not choosing to be difficult. Their brains work differently.</li>
+          <li>You know your child better than anyone else. If something doesn't feel right, it's always worth raising it.</li>
+          <li>Getting a diagnosis (or ruling one out) is not about labelling your child. It's about understanding them.</li>
+        </ul>
+        <p>The fact that you're here, reading this, trying to understand and do right by your child? That's good parenting.</p>
+      </div>
+
+      <!-- Useful resources -->
+      <div class="content-section">
+        <h2>Useful Resources</h2>
+        <div class="resource-list">
+          <div class="resource-item"><div class="resource-item__top"><span class="resource-item__name">NHS: ADHD in Children and Young People</span><span class="badge badge--free">Free</span></div><p class="resource-item__desc">The main NHS page on childhood ADHD. Clear, authoritative overview of symptoms, diagnosis and treatment.</p><div class="resource-item__meta"><span class="resource-item__url"><a href="https://www.nhs.uk/conditions/adhd-children-teenagers" target="_blank" rel="noopener">nhs.uk/conditions/adhd-children-teenagers</a></span></div></div>
+          <div class="resource-item"><div class="resource-item__top"><span class="resource-item__name">ADHD UK</span><span class="badge badge--free">Free</span></div><p class="resource-item__desc">UK charity with detailed guidance on diagnosis pathways, Right to Choose, and support groups.</p><div class="resource-item__meta"><span class="resource-item__url"><a href="https://adhduk.co.uk" target="_blank" rel="noopener">adhduk.co.uk</a></span></div></div>
+          <div class="resource-item"><div class="resource-item__top"><span class="resource-item__name">YoungMinds: ADHD Parent Guide</span><span class="badge badge--free">Free</span></div><p class="resource-item__desc">Parent-focused advice on spotting signs, getting support, and preparing for GP and school conversations.</p><div class="resource-item__meta"><span class="resource-item__url"><a href="https://youngminds.org.uk/parent/parents-a-z-mental-health-guide/adhd" target="_blank" rel="noopener">youngminds.org.uk/parent/parents-a-z-mental-health-guide/adhd</a></span></div></div>
+          <div class="resource-item"><div class="resource-item__top"><span class="resource-item__name">ADDISS — National ADHD Information &amp; Support Service</span><div class="resource-item__badges"><span class="badge badge--free">Free</span><span class="badge badge--helpline">Helpline</span></div></div><p class="resource-item__desc">UK charity with resources, training and a helpline for parents.</p><div class="resource-item__meta"><span class="resource-item__url"><a href="https://addiss.co.uk" target="_blank" rel="noopener">addiss.co.uk</a></span><span class="resource-item__phone">📞 <strong>020 8952 2800</strong></span></div></div>
+          <div class="resource-item"><div class="resource-item__top"><span class="resource-item__name">NICE Guideline NG87</span><span class="badge badge--free">Free</span></div><p class="resource-item__desc">The full NICE clinical guideline for ADHD diagnosis and management in England, Wales and Northern Ireland.</p><div class="resource-item__meta"><span class="resource-item__url"><a href="https://nice.org.uk/guidance/ng87" target="_blank" rel="noopener">nice.org.uk/guidance/ng87</a></span></div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── Autism / ASD Tab ─────────────────────────────────── -->
+  <div id="tab-asd" class="tab-panel" role="tabpanel" aria-labelledby="btn-asd">
+    <div class="page-content">
+
+      <div class="callout callout--important">
+        <p><strong>This page is for information and signposting only. It is not medical advice.</strong> If you have concerns about your child, please speak to your GP or your child's school SENCO.</p>
+      </div>
+
+      <div class="intro-text" style="margin-bottom: 2.5rem;">
+        <p>If you've landed here, you've probably been carrying a quiet worry for a while. Maybe you've noticed something different about how your child connects with others, how they react to certain sounds or textures, or how they struggle in ways that are hard to put into words.</p>
+        <p>You're not imagining it. And you're not alone.</p>
+      </div>
+
+      <!-- Section 1 -->
+      <div class="content-section">
+        <h2>1. What Autism Actually Looks Like Day to Day</h2>
+        <p>The clinical definition of autism talks about differences in social communication and repetitive or restricted behaviours. That's accurate — but it doesn't quite capture what it looks like when you're living with it.</p>
+        <p>In real life, autism might look like:</p>
+        <ul>
+          <li>A child who finds it genuinely overwhelming to be in a busy supermarket, soft play area, or school hall — not because they're being difficult, but because the noise, light, and movement are genuinely painful to their senses.</li>
+          <li>A child who has one very specific, all-consuming interest and who struggles to talk about much else.</li>
+          <li>A child who needs the same routine every single day and falls apart completely when something small changes — a different route to school, a supply teacher, a cancelled activity.</li>
+          <li>A child who takes things very literally. If you say 'pull your socks up', they pull up their socks.</li>
+          <li>A child who seems to struggle to make friends, not because they don't want them, but because the unspoken rules of social interaction feel completely opaque to them.</li>
+          <li>A child who flaps their hands, rocks, spins, or lines things up — not as a quirk, but as a genuine way of regulating how they feel.</li>
+          <li>Meltdowns — not tantrums — where a child is completely overwhelmed and has temporarily lost the ability to regulate themselves.</li>
+        </ul>
+        <div class="callout callout--important">
+          <p><em>It's also worth knowing that many autistic people describe real strengths that come with how their brains are wired: intense focus, deep expertise, honesty, loyalty, creative thinking, a strong sense of fairness, and the ability to notice details others miss. A diagnosis doesn't reduce your child to a list of difficulties.</em></p>
+        </div>
+      </div>
+
+      <!-- Section 2 -->
+      <div class="content-section">
+        <h2>2. Early Signs to Look Out For</h2>
+
+        <div class="age-step">
+          <span class="age-step__label" style="background: var(--understanding);">Ages 2–3 · Toddlers</span>
+          <p>Some early signs of autism can be present from infancy, though they often become clearer as social demands increase. You might notice:</p>
+          <ul>
+            <li>Limited or no eye contact, or eye contact that feels fleeting or unusual.</li>
+            <li>Not pointing to share things they find interesting by 12–14 months.</li>
+            <li>Not responding to their name being called by 12 months.</li>
+            <li>Delayed speech, or speech that develops and then seems to disappear.</li>
+            <li>Very little interest in other children or in pretend play.</li>
+            <li>Strong repetitive behaviours — lining up objects, spinning wheels, insisting on the exact same routines.</li>
+            <li>Unusual reactions to sounds, textures, lights, or tastes.</li>
+          </ul>
+        </div>
+
+        <div class="age-step">
+          <span class="age-step__label" style="background: var(--understanding);">Ages 4–5 · Early Years / Starting School</span>
+          <ul>
+            <li>Difficulty playing with other children in an imaginative or cooperative way.</li>
+            <li>A strong preference for doing things in a very specific order, and becoming very upset if this is disrupted.</li>
+            <li>Taking things very literally — struggling with jokes, sarcasm, or figures of speech.</li>
+            <li>Meltdowns when transitioning between activities or leaving a preferred setting.</li>
+            <li>Sensory sensitivities — refusing to wear certain clothing, struggling with the noise of school.</li>
+            <li>Teachers commenting that your child seems 'in their own world' or is struggling to follow social cues.</li>
+          </ul>
+        </div>
+
+        <div class="age-step">
+          <span class="age-step__label" style="background: var(--understanding);">Ages 6–10 · Primary School</span>
+          <ul>
+            <li>Struggles with friendships — wanting friends but not knowing how to make or keep them.</li>
+            <li>Finding it difficult to understand playground games, unspoken social rules, or why someone might be upset.</li>
+            <li>Becoming increasingly anxious about school — especially about unpredictable situations.</li>
+            <li>Exhaustion at the end of the school day from the effort of navigating a social world that doesn't come naturally.</li>
+            <li>Occasional explosive outbursts at home after holding everything together at school.</li>
+          </ul>
+        </div>
+
+        <div class="callout callout--important">
+          <div class="callout__title">Important</div>
+          <p>Many children show some of these signs at some point. The NHS notes that only a specialist can diagnose autism, and that many signs overlap with other conditions. What clinicians look for is a consistent pattern across multiple settings that is having a real impact on daily life.</p>
+        </div>
+      </div>
+
+      <!-- Section 3 -->
+      <div class="content-section">
+        <h2>3. How Autism Can Show Up Differently in Girls and Boys</h2>
+        <p>The 'classic' picture of autism is more likely to describe how autism presents in boys. Girls are significantly less likely to be diagnosed, and often much later in life, because their autism can look quite different.</p>
+        <p>The NHS explicitly notes that autism can be harder to identify in girls, partly because girls are more likely to 'mask' — that is, to copy the social behaviour of those around them in order to fit in, even when it takes enormous effort.</p>
+        <div style="overflow-x: auto;">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>More commonly seen in boys</th>
+                <th>More commonly seen in girls</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>More visible, rule-based play or special interests</td><td>Special interests that look more 'typical' (animals, books, celebrities) — easily overlooked</td></tr>
+              <tr><td>Social difficulties more obvious — limited interaction with peers</td><td>Strong desire for friendships, but struggling in ways others don't notice</td></tr>
+              <tr><td>Rigid, visible routines and resistance to change</td><td>Perfectionism, anxiety, or rigid thinking that looks like a personality trait</td></tr>
+              <tr><td>Sensory differences more clearly expressed</td><td>Sensory difficulties hidden or suppressed in public</td></tr>
+              <tr><td>More likely to be identified by teachers</td><td>Often described as 'quiet', 'shy', or 'a worrier' — concerns dismissed</td></tr>
+              <tr><td>Diagnosed earlier, often in early years</td><td>Diagnosed later — sometimes not until adolescence or adulthood</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>If you have a daughter who seems to 'hold it together' in public but is increasingly anxious, struggling socially, or falling apart at home, it's absolutely worth exploring autism alongside other possibilities.</p>
+      </div>
+
+      <!-- Section 4 -->
+      <div class="content-section">
+        <h2>4. What Parents Often Say</h2>
+        <div class="voices-grid" style="--community: var(--understanding); --community-bg: var(--understanding-bg);">
+          <div class="voice-card" style="background: var(--understanding-bg); border-color: var(--understanding);"><p>"I keep telling people he's not being rude. He genuinely doesn't understand that what he said was hurtful. But I can see how it looks to other people, and it breaks my heart."</p></div>
+          <div class="voice-card" style="background: var(--understanding-bg); border-color: var(--understanding);"><p>"She's so bright — she can tell you everything about Ancient Egypt. But she has no idea how to join in at lunchtime. I watch her hovering at the edge of groups, trying to figure out the rules, and I don't know how to help her."</p></div>
+          <div class="voice-card" style="background: var(--understanding-bg); border-color: var(--understanding);"><p>"We can't change anything. Same breakfast, same route to school, same seat at the table. If anything changes, the whole day falls apart. I've stopped making plans because I can't face the fallout."</p></div>
+          <div class="voice-card" style="background: var(--understanding-bg); border-color: var(--understanding);"><p>"The school keeps telling me he's fine. But the child they're describing isn't the child I pick up at 3pm. He's holding it together all day and then exploding the moment we get home."</p></div>
+        </div>
+      </div>
+
+      <!-- Section 5 -->
+      <div class="content-section">
+        <h2>5. The Difference Between Traits and a Diagnosis</h2>
+        <p>A formal autism diagnosis is reached when all of the following apply:</p>
+        <ul>
+          <li>Difficulties in social communication and interaction are persistent and noticeable across different settings.</li>
+          <li>There are restricted, repetitive patterns of behaviour, interests, or activities.</li>
+          <li>These have been present since early childhood, even if they only become fully apparent later.</li>
+          <li>They are causing meaningful difficulties in daily life — in learning, friendships, or family life.</li>
+          <li>They are not better explained by another condition.</li>
+        </ul>
+        <p>The NICE guidelines that govern autism diagnosis in England, Wales and Northern Ireland are clear that a diagnosis requires a full multi-agency assessment by a specialist team. It is not something that can be diagnosed by a GP, a teacher, or a website.</p>
+        <div class="callout callout--important">
+          <p>The National Autistic Society notes that a diagnosis 'can be a positive thing' that helps you and your child understand why they find certain things difficult, and identify their strengths and support needs.</p>
+          <p class="small">Source: National Autistic Society, 'Should I get my child assessed?'</p>
+        </div>
+      </div>
+
+      <!-- Section 6 -->
+      <div class="content-section" id="asd-assessment">
+        <h2>6. What to Do First in the UK</h2>
+        <ol class="steps">
+          <li>
+            <h3>Talk to your child's school</h3>
+            <p>Speak to your child's class teacher and, particularly, the school SENCO. They can tell you whether they've noticed similar concerns, put support in place now, and write a summary to support a GP referral.</p>
+          </li>
+          <li>
+            <h3>See your GP</h3>
+            <p>Your GP cannot diagnose autism, but they are the gateway to a formal assessment. Bring specific examples of what you've been observing at home. Be specific about the impact on daily life, not just the behaviours themselves.</p>
+          </li>
+          <li>
+            <h3>The NHS assessment pathway</h3>
+            <p>A full autism assessment typically involves detailed conversations with you, information gathered from school, direct observation of your child, and consideration of whether another condition might better explain the difficulties. A diagnosis is usually made by a multi-disciplinary team.</p>
+          </li>
+        </ol>
+        <div class="callout callout--rights">
+          <div class="callout__title">Right to Choose — England only</div>
+          <p>If you are in England and waiting times in your area are very long, you may have a legal right to request referral to an alternative NHS-commissioned provider under the NHS Right to Choose scheme. This applies to neurodevelopmental assessments. Ask your GP, or see the NHS Right to Choose guidance.</p>
+        </div>
+        <div class="callout callout--important">
+          <div class="callout__title">Can I get support before a diagnosis?</div>
+          <p>Yes. You don't need to wait for a diagnosis to start getting support. Schools can put adjustments in place without one. Your local council will have a SEND Local Offer — a list of local services, support groups, and resources — which you can access regardless of whether your child has a diagnosis.</p>
+        </div>
+      </div>
+
+      <!-- Useful resources -->
+      <div class="content-section">
+        <h2>Useful Resources</h2>
+        <div class="resource-list">
+          <div class="resource-item"><div class="resource-item__top"><span class="resource-item__name">NHS: Autism in Children</span><span class="badge badge--free">Free</span></div><p class="resource-item__desc">The main NHS page on autism in children. Clear overview of signs, diagnosis and next steps.</p><div class="resource-item__meta"><span class="resource-item__url"><a href="https://www.nhs.uk/conditions/autism" target="_blank" rel="noopener">nhs.uk/conditions/autism</a></span></div></div>
+          <div class="resource-item"><div class="resource-item__top"><span class="resource-item__name">National Autistic Society</span><div class="resource-item__badges"><span class="badge badge--free">Free</span><span class="badge badge--helpline">Helpline</span></div></div><p class="resource-item__desc">The UK's leading autism charity. In-depth guidance for parents on diagnosis, education, and support.</p><div class="resource-item__meta"><span class="resource-item__url"><a href="https://autism.org.uk" target="_blank" rel="noopener">autism.org.uk</a></span><span class="resource-item__phone">📞 <strong>0808 800 4104</strong></span></div></div>
+          <div class="resource-item"><div class="resource-item__top"><span class="resource-item__name">Autistic Girls Network</span><span class="badge badge--free">Free</span></div><p class="resource-item__desc">UK charity dedicated to autistic girls and women. Resources specifically for parents of girls who may be autistic, including information on masking and late diagnosis.</p><div class="resource-item__meta"><span class="resource-item__url"><a href="https://autisticgirlsnetwork.org" target="_blank" rel="noopener">autisticgirlsnetwork.org</a></span></div></div>
+          <div class="resource-item"><div class="resource-item__top"><span class="resource-item__name">NICE Guideline NG142 (Autism)</span><span class="badge badge--free">Free</span></div><p class="resource-item__desc">The full NICE clinical guideline for autism diagnosis and management, referenced by clinicians across England, Wales and Northern Ireland.</p><div class="resource-item__meta"><span class="resource-item__url"><a href="https://nice.org.uk/guidance/ng142" target="_blank" rel="noopener">nice.org.uk/guidance/ng142</a></span></div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── Sensory Processing Tab ───────────────────────────── -->
+  <div id="tab-sensory" class="tab-panel" role="tabpanel" aria-labelledby="btn-sensory">
+    <div class="page-content">
+
+      <div class="callout callout--important">
+        <p><strong>This page is for information and signposting only. It is not medical advice.</strong> If you have concerns about your child, please speak to your GP or your child's school SENCO.</p>
+      </div>
+
+      <div class="intro-text" style="margin-bottom: 2.5rem;">
+        <p>If you've found your way here, there's a good chance you've been trying to make sense of a child who seems to find the world genuinely harder than other children do. Maybe mornings are a battle over clothing that feels 'scratchy'. Maybe your child covers their ears in the supermarket, gags at certain food smells, or can't seem to calm down after a busy day at school.</p>
+        <p>You're not imagining it. And you're not alone.</p>
+      </div>
+
+      <!-- Section 1 -->
+      <div class="content-section">
+        <h2>1. What Sensory Processing Differences Actually Look Like Day to Day</h2>
+        <p>We all take in information from the world around us through our senses — not just the five you were taught in school, but eight in total. These include the way we experience movement and balance (vestibular), awareness of where our body is in space (proprioception), and awareness of what's happening inside our bodies, like hunger, temperature and pain (interoception).</p>
+        <p>For most people, the brain processes all of this without us having to think about it. For some children, that processing doesn't work as smoothly — so their brain either receives too much information (hypersensitivity) or not enough (hyposensitivity). Sometimes the same child experiences both, in different senses, at different times.</p>
+        <p>In real life, sensory processing differences might look like:</p>
+        <ul>
+          <li>A child who finds the tags in their school shirt physically unbearable — not melodramatic, genuinely painful — and refuses to get dressed in the morning.</li>
+          <li>A child who covers their ears in the school hall or at parties, even when other children are clearly fine with the noise level.</li>
+          <li>A child who craves rough physical contact — crashing into things, needing very firm hugs, chewing on their sleeves or toys — because their proprioceptive system needs more input.</li>
+          <li>A child who gags at food smells, refuses entire categories of food based on texture, or can only eat very specific, familiar things.</li>
+          <li>A child who can't seem to sit still — always rocking, spinning, hanging upside down — because movement helps them regulate their nervous system.</li>
+          <li>A child who seems not to notice when they've been hurt, or who has very high pain thresholds and gets injured more often than expected.</li>
+          <li>A child who melts down completely after a school day that everyone else thought was fine.</li>
+          <li>A child who seems clumsy — tripping, bumping into things, misjudging distances — because their sense of where their body is in space is unreliable.</li>
+        </ul>
+        <div class="callout callout--important">
+          <div class="callout__title">Worth knowing</div>
+          <p>Sensory processing differences often go hand in hand with conditions like autism, ADHD and developmental coordination disorder (dyspraxia). They can also appear in children who don't have any other diagnosis. Whatever the context, the sensory experience is real — it isn't a choice, a phase, or poor behaviour.</p>
+        </div>
+      </div>
+
+      <!-- Section 2 -->
+      <div class="content-section">
+        <h2>2. Early Signs to Look Out For</h2>
+
+        <div class="age-step">
+          <span class="age-step__label" style="background: var(--understanding);">Ages 2–3 · Toddlers</span>
+          <ul>
+            <li>Extreme distress at ordinary sounds, textures, or smells that other children the same age tolerate without difficulty.</li>
+            <li>Refusing to walk barefoot on grass, sand or different floor surfaces.</li>
+            <li>Gagging or vomiting in response to certain food textures or smells, beyond typical toddler fussiness.</li>
+            <li>An unusually high need for physical movement — always climbing, crashing, spinning — and rarely settling.</li>
+            <li>Becoming overwhelmed or distressed in busy, noisy environments like soft play or supermarkets.</li>
+            <li>Hating having their hair washed, nails cut, teeth brushed, or face wiped in a way that is intense and ongoing, not just ordinary toddler resistance.</li>
+          </ul>
+        </div>
+
+        <div class="age-step">
+          <span class="age-step__label" style="background: var(--understanding);">Ages 4–5 · Early Years / Starting School</span>
+          <ul>
+            <li>Struggling to cope with the noise of a school hall, assemblies, or a busy classroom.</li>
+            <li>Refusal to join in with messy play, arts and crafts, or activities involving certain textures.</li>
+            <li>Very strong preferences about clothing — refusing seams, tags, certain fabrics, or insisting on the same items repeatedly.</li>
+            <li>Distress or avoidance around the school dining hall due to smells, noise, or being in close proximity to other children.</li>
+          </ul>
+        </div>
+
+        <div class="age-step">
+          <span class="age-step__label" style="background: var(--understanding);">Ages 6–10 · Primary School</span>
+          <ul>
+            <li>Significant exhaustion at the end of every school day, beyond what you'd expect — because managing the sensory environment has taken so much effort.</li>
+            <li>Difficulty concentrating in class that seems related to environmental factors (noise, lighting, the proximity of other children) rather than ability.</li>
+            <li>Physical clumsiness — tripping, knocking things over, struggling with PE — linked to poor proprioception or vestibular processing.</li>
+            <li>Strong negative reactions to fire alarms, hand dryers, specific environmental triggers.</li>
+            <li>Increasing anxiety around any situation with unpredictable sensory demands — parties, school trips, PE lessons.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Section 3 -->
+      <div class="content-section">
+        <h2>3. A Note on 'Sensory Processing Disorder' as a Term</h2>
+        <p>'Sensory Processing Disorder' (SPD) is a term used in some settings, but it is important to be aware that it is not a recognised standalone diagnosis in the UK. The Royal College of Occupational Therapists (RCOT) does not support its use as a diagnostic label, and it does not appear as an independent diagnosis in clinical manuals.</p>
+        <p>Sensory differences are, however, listed as symptoms of conditions such as autism and ADHD, and can be identified and supported within those frameworks.</p>
+        <div class="callout callout--important">
+          <p>This does not mean sensory difficulties aren't real or serious — they absolutely are. What it means is that in the UK, your child's sensory needs are most likely to be assessed and supported through a paediatric occupational therapy referral or as part of a broader neurodevelopmental assessment.</p>
+          <p class="small">Source: Royal College of Occupational Therapists, 'Sensory Approaches'</p>
+        </div>
+      </div>
+
+      <!-- Section 4 -->
+      <div class="content-section">
+        <h2>4. What to Do First in the UK</h2>
+        <ol class="steps">
+          <li>
+            <h3>Talk to your child's school</h3>
+            <p>Speak to the school SENCO. They can tell you whether they've noticed similar difficulties at school, put support in place without waiting for a diagnosis, and write a summary to support a GP referral.</p>
+          </li>
+          <li>
+            <h3>See your GP</h3>
+            <p>Your GP can refer your child to a paediatric occupational therapist — the specialist most likely to assess and support sensory differences. Bring specific written examples of how the sensory difficulties are affecting daily life.</p>
+          </li>
+          <li>
+            <h3>Occupational Therapy Assessment</h3>
+            <p>Paediatric occupational therapists are the specialists who assess sensory processing differences in children in the UK. A good OT assessment will look at how your child's sensory processing affects their ability to take part in everyday activities — dressing, eating, school, play, and family life. Waiting times for NHS occupational therapy vary considerably across the UK.</p>
+          </li>
+        </ol>
+
+        <div class="callout callout--rights">
+          <div class="callout__title">Right to Choose — England only</div>
+          <p>If you are in England and NHS waiting times in your area are very long, you may have a legal right to request referral to an alternative NHS-commissioned provider under the NHS Right to Choose scheme. This applies to neurodevelopmental and some community health services. Ask your GP, or see the NHS Right to Choose guidance.</p>
+        </div>
+      </div>
+
+      <!-- Useful resources -->
+      <div class="content-section">
+        <h2>Useful Resources</h2>
+        <div class="resource-list">
+          <div class="resource-item"><div class="resource-item__top"><span class="resource-item__name">National Autistic Society — Sensory Processing</span><span class="badge badge--free">Free</span></div><p class="resource-item__desc">In-depth guidance on sensory differences, hyper- and hyposensitivity, and strategies. Covers all eight senses.</p><div class="resource-item__meta"><span class="resource-item__url"><a href="https://autism.org.uk/advice-and-guidance/about-autism/sensory-processing" target="_blank" rel="noopener">autism.org.uk/advice-and-guidance/about-autism/sensory-processing</a></span></div></div>
+          <div class="resource-item"><div class="resource-item__top"><span class="resource-item__name">Royal College of Occupational Therapists (RCOT)</span><span class="badge badge--free">Free</span></div><p class="resource-item__desc">Official UK guidance on sensory approaches and interventions for children. Professional body.</p><div class="resource-item__meta"><span class="resource-item__url"><a href="https://rcot.co.uk/explore-resources/children-young-people-families/sensory-approaches" target="_blank" rel="noopener">rcot.co.uk/explore-resources/children-young-people-families/sensory-approaches</a></span></div></div>
+          <div class="resource-item"><div class="resource-item__top"><span class="resource-item__name">Sensory Integration Education</span><span class="badge badge--free">Free info</span></div><p class="resource-item__desc">UK not-for-profit organisation promoting good practice in sensory integration. Free parent resources and a practitioner directory.</p><div class="resource-item__meta"><span class="resource-item__url"><a href="https://sensoryintegration.org.uk" target="_blank" rel="noopener">sensoryintegration.org.uk</a></span></div></div>
+          <div class="resource-item"><div class="resource-item__top"><span class="resource-item__name">Contact (for families with disabled children)</span><div class="resource-item__badges"><span class="badge badge--free">Free</span><span class="badge badge--helpline">Helpline</span></div></div><p class="resource-item__desc">Support and advice for families of disabled children, including those with sensory needs.</p><div class="resource-item__meta"><span class="resource-item__url"><a href="https://contact.org.uk" target="_blank" rel="noopener">contact.org.uk</a></span><span class="resource-item__phone">📞 <strong>0808 808 3555</strong></span></div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo">Spectrum Kids Hub</a>
+          <p>Real support for real families</p>
+        </div>
+        <div class="footer__nav">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="understanding.html">Understanding</a></li>
+            <li><a href="reallife.html">Real Life</a></li>
+            <li><a href="toolkit.html">Toolkit</a></li>
+            <li><a href="nourish.html">Nourish</a></li>
+            <li><a href="community.html">Community</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__disclaimer">
+        <p><em>Spectrum Kids Hub is an information and signposting resource for parents. Nothing on this site constitutes medical advice. Always consult your GP or a qualified health professional with concerns about your child. All UK resources listed were verified as live and current in March 2026. If you find a link that no longer works, please contact us.</em></p>
+        <p class="footer__nutricore">Nutritional support by <a href="https://nutricore.health" target="_blank" rel="noopener">Nutricore Health</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+  <script>
+    function switchTab(id) {
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+      document.getElementById('tab-' + id).classList.add('active');
+      const btn = document.getElementById('btn-' + id);
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected','true');
+    }
+  </script>
+</body>
+</html>
