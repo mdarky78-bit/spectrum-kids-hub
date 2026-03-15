@@ -9,15 +9,18 @@
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- ── Navigation ──────────────────────────────────────────── -->
   <nav class="nav" aria-label="Main navigation">
     <div class="nav__inner">
-      <a href="index.html" class="nav__logo">Spectrum Kids Hub</a>
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-dot"></span>
+        Spectrum Kids Hub
+      </a>
       <button class="nav__burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav__links" id="nav-links">
-        <li><a href="index.html" class="active-home">Home</a></li>
+        <li><a href="index.html"            class="active-home">Home</a></li>
         <li><a href="understanding.html">Understanding</a></li>
         <li><a href="reallife.html">Real Life</a></li>
         <li><a href="toolkit.html">Toolkit</a></li>
@@ -27,159 +30,254 @@
     </div>
   </nav>
 
-  <!-- Hero -->
+  <!-- ── Search Bar ───────────────────────────────────────────── -->
+  <div class="search-wrap">
+    <div class="search-inner">
+      <input class="search-input" type="search" id="siteSearch" placeholder="Search Spectrum Kids Hub… e.g. meltdown, EHCP, sleep, SENCO" aria-label="Search the site">
+      <button class="search-btn" onclick="runSearch()">Search</button>
+    </div>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+
+  <!-- ── Hero ─────────────────────────────────────────────────── -->
   <section class="hero">
     <div class="hero__inner">
-      <span class="hero__tagline">Real support for real families</span>
-      <h1>You're Not Imagining It.</h1>
-      <p class="hero__lead">Welcome to Spectrum Kids Hub — a place built for families like yours. Whatever brought you here, you're in exactly the right place.</p>
-      <div class="hero__ctas">
-        <a href="understanding.html" class="btn btn--primary">Explore the guides</a>
-        <a href="community.html" class="btn btn--outline">Join the community</a>
+      <div class="hero__text">
+        <span class="hero__eyebrow">Real support for real families</span>
+        <h1>You're Not <em>Imagining</em> It.</h1>
+        <p class="hero__lead">If you've been lying awake wondering whether what you're seeing in your child is something more — you're in exactly the right place. Honest, jargon-free information for parents of neurodiverse children aged 2–10.</p>
+        <div class="hero__ctas">
+          <a href="understanding.html" class="btn btn--white">Explore the guides</a>
+          <a href="community.html"     class="btn btn--ghost">Join the community</a>
+        </div>
+        <div class="hero__stat-strip">
+          <div class="hero__stat"><strong>2–10</strong><span>Ages covered</span></div>
+          <div class="hero__stat"><strong>Free</strong><span>Always free</span></div>
+          <div class="hero__stat"><strong>UK</strong><span>NHS-aligned</span></div>
+        </div>
+      </div>
+      <div class="hero__image">
+        <div class="hero__img-frame">
+          <!-- PHOTO SLOT: hero-parent-child.jpg
+               Unsplash search: "parent child outdoor natural light warm"
+               Suggested: Photo by Jordan Whitt or Bruno Nascimento on Unsplash
+               Alt: A parent sitting with their young child in a calm outdoor setting -->
+          <img src="images/hero-parent-child.jpg"
+               alt="A parent sitting calmly with their young child outdoors"
+               onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\'><div class=\'ph-icon\'>🌿</div><div class=\'ph-label\'>Hero image<br>hero-parent-child.jpg</div></div>'">
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Intro -->
+  <!-- ── Reassurance strip ─────────────────────────────────────── -->
+  <section class="section section--alt" style="padding: 3rem 1.5rem;">
+    <div class="container">
+      <div style="max-width: 780px; margin: 0 auto; text-align: center;">
+        <p style="font-size: 1.15rem; line-height: 1.75; color: var(--mid-grey);">Maybe it started with a comment from a teacher. Or a birthday party where things just felt... harder than they should. Maybe you've been quietly Googling at midnight. <strong style="color: var(--charcoal);">Whatever brought you here, you belong here.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── What you'll find ─────────────────────────────────────── -->
   <section class="section">
     <div class="container">
-      <div class="intro-text">
-        <p>Maybe it started with a comment from a teacher. Or a birthday party where things just felt... harder than they should. Maybe you've been quietly Googling at midnight, typing words you're not quite ready to say out loud yet.</p>
-        <p>If any of that sounds familiar, you're in exactly the right place.</p>
+      <div class="section__head">
+        <span class="eyebrow">What's here</span>
+        <h2>The resource we wish we'd had</h2>
+        <p>Honest, practical, and easy to navigate even when your brain is fried from a difficult day.</p>
       </div>
 
-      <div class="pull-quote" style="max-width: 680px; margin: 2rem auto;">
-        <p>That quiet hunch you've been carrying? It deserves to be taken seriously. And so do you.</p>
-      </div>
+      <div class="feature-grid">
 
-      <div class="intro-text">
-        <p>Perhaps you're at the very beginning — just starting to wonder, still not sure if you're overreacting, looking for reassurance or a nudge in the right direction. We get it. That stage is exhausting in its own particular way.</p>
-        <p>Or maybe you've been deep in it for years. You've done the CAMHS waiting lists, the school SENCO meetings, the stack of reports on the shelf. You know your child inside out and you're still searching for that one piece of information that clicks everything into place. We see you too.</p>
-        <p>Spectrum Kids Hub doesn't ask you to be at any particular stage. Whether neurodiversity is a brand new word in your world or you could deliver a TED talk on sensory processing, there's something here for you.</p>
+        <a href="understanding.html" class="feature-card" style="--card-accent: var(--understanding);">
+          <div class="feature-card__img">
+            <!-- PHOTO SLOT: understanding-card.jpg
+                 Unsplash: "child reading books concentration focus soft light"
+                 Alt: Child absorbed in reading at home -->
+            <img src="images/understanding-card.jpg"
+                 alt="Child absorbed in reading at home"
+                 onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\'><div class=\'ph-icon\'>🧠</div><div class=\'ph-label\'>understanding-card.jpg</div></div>'">
+            <div class="feature-card__accent"></div>
+          </div>
+          <div class="feature-card__body">
+            <div class="feature-card__label">Understanding</div>
+            <h3>Autism, ADHD &amp; Sensory Processing</h3>
+            <p>Plain-English guides for parents. What it actually looks like day to day, early signs by age, and what to do first in the UK.</p>
+          </div>
+        </a>
+
+        <a href="reallife.html" class="feature-card" style="--card-accent: var(--reallife);">
+          <div class="feature-card__img">
+            <!-- PHOTO SLOT: reallife-card.jpg
+                 Unsplash: "child having meltdown parent kitchen morning tired"
+                 Alt: Parent in a calm kitchen moment with an upset child -->
+            <img src="images/reallife-card.jpg"
+                 alt="A parent staying calm with a distressed child"
+                 onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\'><div class=\'ph-icon\'>🏡</div><div class=\'ph-label\'>reallife-card.jpg</div></div>'">
+            <div class="feature-card__accent"></div>
+          </div>
+          <div class="feature-card__body">
+            <div class="feature-card__label">Real Life</div>
+            <h3>10 Scenarios That Actually Happen</h3>
+            <p>The supermarket meltdown. The morning routine that takes two hours. What's neurologically happening — and what to try.</p>
+          </div>
+        </a>
+
+        <a href="toolkit.html" class="feature-card" style="--card-accent: var(--toolkit);">
+          <div class="feature-card__img">
+            <!-- PHOTO SLOT: toolkit-card.jpg
+                 Unsplash: "desk notebook pen organised planning flat lay warm"
+                 Alt: Organised desk with notebook and planning materials -->
+            <img src="images/toolkit-card.jpg"
+                 alt="Organised planning materials on a warm wooden desk"
+                 onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\'><div class=\'ph-icon\'>🗂️</div><div class=\'ph-label\'>toolkit-card.jpg</div></div>'">
+            <div class="feature-card__accent"></div>
+          </div>
+          <div class="feature-card__body">
+            <div class="feature-card__label">Toolkit</div>
+            <h3>UK Resources &amp; Helplines</h3>
+            <p>Charities, NHS pathways, school support, Right to Choose, private assessment routes, and crisis services — all in one place.</p>
+          </div>
+        </a>
+
+        <a href="nourish.html" class="feature-card" style="--card-accent: var(--nourish);">
+          <div class="feature-card__img">
+            <!-- PHOTO SLOT: nourish-card.jpg
+                 Unsplash: "healthy food family kitchen colourful vegetables child"
+                 Alt: Colourful family meal preparation in a bright kitchen -->
+            <img src="images/nourish-card.jpg"
+                 alt="Colourful food preparation in a family kitchen"
+                 onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\'><div class=\'ph-icon\'>🥦</div><div class=\'ph-label\'>nourish-card.jpg</div></div>'">
+            <div class="feature-card__accent"></div>
+          </div>
+          <div class="feature-card__body">
+            <div class="feature-card__label">Nourish</div>
+            <h3>Food, Routine &amp; Rest</h3>
+            <p>What nutrition, sleep, and lifestyle can — and genuinely cannot — offer. Evidence-aware, guilt-free, and grounded in reality.</p>
+          </div>
+        </a>
+
+        <a href="community.html" class="feature-card" style="--card-accent: var(--community);">
+          <div class="feature-card__img">
+            <!-- PHOTO SLOT: community-card.jpg
+                 Unsplash: "women coffee conversation support friends warm natural"
+                 Alt: Two parents talking over coffee, relaxed and supportive -->
+            <img src="images/community-card.jpg"
+                 alt="Two parents having a supportive conversation over coffee"
+                 onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\'><div class=\'ph-icon\'>💬</div><div class=\'ph-label\'>community-card.jpg</div></div>'">
+            <div class="feature-card__accent"></div>
+          </div>
+          <div class="feature-card__body">
+            <div class="feature-card__label">Community</div>
+            <h3>Real Voices &amp; Peer Support</h3>
+            <p>For the part of this that doesn't fit neatly into a GP referral. Real parents, no scripts, no gold star for coping well.</p>
+          </div>
+        </a>
+
+        <a href="understanding.html#assessment" class="feature-card" style="--card-accent: var(--teal);">
+          <div class="feature-card__img">
+            <!-- PHOTO SLOT: assessment-card.jpg
+                 Unsplash: "gp doctor child consultation warm light waiting room"
+                 Alt: Parent and child in a calm medical consultation -->
+            <img src="images/assessment-card.jpg"
+                 alt="Parent and child at a calm GP consultation"
+                 onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\'><div class=\'ph-icon\'>📋</div><div class=\'ph-label\'>assessment-card.jpg</div></div>'">
+            <div class="feature-card__accent"></div>
+          </div>
+          <div class="feature-card__body">
+            <div class="feature-card__label">Getting help</div>
+            <h3>The Assessment Journey</h3>
+            <p>Step-by-step from first GP visit to diagnosis and beyond. NHS and private routes explained clearly.</p>
+          </div>
+        </a>
+
       </div>
     </div>
   </section>
 
-  <!-- What You'll Find Here -->
+  <!-- ── Split: "You're not alone" ───────────────────────────── -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="split">
+        <div class="split__text">
+          <h2>You don't have to figure this out alone.</h2>
+          <p style="color: rgba(255,255,255,0.75); font-size: 1.05rem;">One of the things parents of neurodiverse children say over and over again is how lonely it can feel — even when you're surrounded by people who love you. That's why community is at the heart of Spectrum Kids Hub.</p>
+          <div class="pull-quote pull-quote--community" style="margin-top: 1.5rem; border-color: var(--community); background: rgba(136,14,79,0.15);">
+            <p style="color: rgba(255,255,255,0.9);">In our peer support spaces, you'll find parents who truly get it — because they're living it too. No judgement. No scripts.</p>
+          </div>
+          <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <a href="community.html" class="btn btn--white" style="background: var(--community); color: #fff;">Join the community</a>
+            <a href="toolkit.html"   class="btn btn--ghost">Browse resources</a>
+          </div>
+        </div>
+        <div>
+          <!-- PHOTO SLOT: community-split.jpg
+               Unsplash: "parent tired but smiling phone late night cup tea cosy"
+               Alt: A parent in a cosy evening setting, looking at their phone for support -->
+          <div class="img-card" style="aspect-ratio: 1/1;">
+            <img src="images/community-split.jpg"
+                 alt="A parent finding community support on their phone"
+                 onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'height:100%\'><div class=\'ph-icon\'>🫂</div><div class=\'ph-label\'>community-split.jpg</div></div>'">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Nutricore Health section ──────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="split split--reverse">
+        <div>
+          <!-- PHOTO SLOT: nourish-split.jpg
+               Unsplash: "child eating healthy food kitchen sunlight colourful plate"
+               Alt: A child eating a colourful meal in a bright sunny kitchen -->
+          <div class="img-card">
+            <img src="images/nourish-split.jpg"
+                 alt="A child enjoying a colourful meal in a sunny kitchen"
+                 onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\'><div class=\'ph-icon\'>🥕</div><div class=\'ph-label\'>nourish-split.jpg</div></div>'">
+          </div>
+        </div>
+        <div class="split__text">
+          <span class="eyebrow" style="color: var(--nourish);">Nourish · In association with Nutricore Health</span>
+          <h2 style="color: var(--nourish);">Food, Routine &amp; Rest</h2>
+          <p>There's a growing body of evidence that diet, gut health, sleep, movement, and lifestyle can play a meaningful role in how neurodiverse children feel day to day. Not as a cure — but as one part of a bigger picture of wellbeing.</p>
+          <div class="pull-quote pull-quote--nourish">
+            <p>Sometimes small, sustainable changes in how a family eats, sleeps, and moves can make the difficult days feel just a little more manageable.</p>
+          </div>
+          <a href="nourish.html" class="btn btn--primary" style="background: var(--nourish);">Explore Nourish</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── "About this site" ─────────────────────────────────────── -->
   <section class="section section--alt">
     <div class="container">
-      <div class="section__header">
-        <h2>What you'll find here</h2>
-        <p>We've tried to build the resource we wish we'd had — honest, practical, and easy to navigate even when your brain is fried from a difficult day.</p>
-      </div>
-
-      <div class="nav-cards">
-
-        <a href="understanding.html" class="nav-card" style="--card-accent: var(--understanding);">
-          <div class="nav-card__label">Understanding</div>
-          <h3>Understanding Neurodiversity</h3>
-          <p>Plain-English guides covering autism, ADHD, and sensory processing differences. No jargon, no overwhelm.</p>
-        </a>
-
-        <a href="reallife.html" class="nav-card" style="--card-accent: var(--reallife);">
-          <div class="nav-card__label">Real Life</div>
-          <h3>Real Life Scenarios</h3>
-          <p>Those moments in the supermarket, the morning meltdown, the party that didn't go to plan. What's happening and what to try.</p>
-        </a>
-
-        <a href="toolkit.html" class="nav-card" style="--card-accent: var(--toolkit);">
-          <div class="nav-card__label">Toolkit</div>
-          <h3>UK Resources</h3>
-          <p>NHS pathway guidance, national charities, school support, communities and crisis services — all in one place.</p>
-        </a>
-
-        <a href="nourish.html" class="nav-card" style="--card-accent: var(--nourish);">
-          <div class="nav-card__label">Nourish</div>
-          <h3>Food, Routine &amp; Rest</h3>
-          <p>What nutrition, sleep, movement and lifestyle can — and genuinely cannot — offer families like yours.</p>
-        </a>
-
-        <a href="community.html" class="nav-card" style="--card-accent: var(--community);">
-          <div class="nav-card__label">Community</div>
-          <h3>Peer Support</h3>
-          <p>Real voices, UK groups and forums, and a space for the part of this journey that doesn't fit neatly into a referral form.</p>
-        </a>
-
-        <a href="understanding.html#assessment" class="nav-card" style="--card-accent: var(--teal);">
-          <div class="nav-card__label">Getting help</div>
-          <h3>The Assessment Journey</h3>
-          <p>Step-by-step support from first referral through to diagnosis and beyond — NHS and private routes explained.</p>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Nutricore Health -->
-  <section class="section">
-    <div class="container">
-      <div style="max-width: 720px; margin: 0 auto;">
-        <div style="border-left: 4px solid var(--nourish); padding-left: 1.5rem;">
-          <h2 style="color: var(--nourish);">Introducing Nutricore Health</h2>
-          <p style="font-family: var(--font-head); font-size: 1.05rem; color: var(--mid-grey); font-style: italic; margin-bottom: 1rem;">Nourishing the whole family</p>
-        </div>
-        <div class="pull-quote pull-quote--nourish" style="margin-top: 1.5rem;">
-          <p>There's a growing body of evidence suggesting that diet, gut health, sleep, movement, and overall lifestyle can play a meaningful role in how neurodiverse children and adults feel day to day.</p>
-        </div>
-        <p>Not as a cure — there is no cure, and we'd never suggest there should be — but as one part of a bigger picture of wellbeing. Nutricore Health is our dedicated space for this, covering everything from nutrient-rich eating and reducing ultra-processed foods to sleep hygiene, physical activity, and managing stress as a family.</p>
-        <p>Everything here is educational and informational, written with care and reviewed for accuracy. We're not here to prescribe, replace your GP, or sell you anything. We're here to share what the research says and help you make informed choices that work for your family.</p>
-        <div class="pull-quote pull-quote--nourish">
-          <p>Sometimes small, sustainable changes in how a family eats, sleeps, and moves can make the difficult days feel just a little more manageable.</p>
-        </div>
-        <a href="nourish.html" class="btn btn--primary" style="background: var(--nourish); margin-top: 0.5rem;">Explore Nourish</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Community Teaser -->
-  <section class="section section--alt">
-    <div class="container">
-      <div style="max-width: 720px; margin: 0 auto; text-align: center;">
-        <h2>You don't have to figure this out alone.</h2>
-        <p style="color: var(--mid-grey); font-size: 1.05rem; margin-bottom: 1.5rem;">One of the things parents of neurodiverse children say over and over again is how lonely it can feel — even when you're surrounded by people who love you. That's why community is at the heart of Spectrum Kids Hub.</p>
-        <div class="pull-quote pull-quote--community" style="text-align: left; margin-bottom: 1.5rem;">
-          <p>In our peer support spaces, you'll find parents who truly get it — because they're living it too. No judgement. No scripts. Just real people sharing honest experiences.</p>
-        </div>
-        <p style="color: var(--mid-grey);">Whether you want to ask a question, share a win (however small), vent without explanation, or just read along quietly until you're ready to join in — there's a place for you here.</p>
-        <div style="margin-top: 1.5rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-          <a href="community.html" class="btn btn--primary" style="background: var(--community);">Join our community</a>
-          <a href="toolkit.html" class="btn btn--outline" style="color: var(--community); border-color: var(--community);">Browse the resources</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About the founder -->
-  <section class="section">
-    <div class="container">
-      <div style="max-width: 680px; margin: 0 auto;">
-        <h2>A note from the person behind this</h2>
-        <p>I want to be honest with you about what Spectrum Kids Hub is — and what it isn't.</p>
-        <p>I'm a parent at the beginning of my own journey, just like many of you reading this. I started building this site partly to make sense of everything I was learning, partly because pulling information together is how I process things, and partly because — if I'm being completely honest — it makes the whole thing feel less overwhelming. Building something useful is how I cope. It turns out, learning by doing is very much my thing.</p>
-        <p>I'm also a nutritional therapist and health coach, so the diet and lifestyle content you'll find here comes from a place of genuine professional knowledge as well as personal experience. But everything else — the assessment guides, the education stuff, the emotional bits — that's me learning alongside you, gathering the best information I can find, and sharing it as I go.</p>
+      <div style="max-width: 700px; margin: 0 auto;">
+        <span class="eyebrow">A note from the person behind this</span>
+        <h2>This is a community project — in every sense.</h2>
+        <p>I'm a parent at the beginning of my own journey, just like many of you reading this. I started building this site partly to make sense of everything I was learning, and partly because building something useful is how I cope.</p>
+        <p>I'm also a nutritional therapist and health coach, so the diet and lifestyle content comes from a place of genuine professional knowledge as well as personal experience. But everything else — the assessment guides, the education stuff, the emotional bits — that's me learning alongside you.</p>
         <div class="pull-quote">
           <p>This site grows as my journey does. It's a living thing — not a finished product.</p>
         </div>
-        <p>That means it won't always be perfect. Some things might be out of date. Some things might be incomplete. Some areas will be thin right now and richer in a few months' time. I'd rather share something real and growing than wait until it's polished.</p>
-        <p><strong>This is a community project — in every sense.</strong> If you know of a resource, a topic, or a story that belongs here, please share it. If you spot something that's out of date, or not quite right, please tell me. There's no ego here — just a genuine desire to get this right and keep it useful.</p>
-        <p>Spectrum Kids Hub isn't a service I'm selling. There's nothing to buy. It's a peer-to-peer space — me sharing what I'm learning, others sharing what they know, and all of us building something better together than any of us could manage alone.</p>
-        <div class="pull-quote">
-          <p>If you have something to add — a resource, a correction, a story, an idea — reach out. This is yours as much as it is mine.</p>
-        </div>
-        <p>Thank you for being here. I genuinely mean that.</p>
+        <p>Spectrum Kids Hub isn't a service I'm selling. There's nothing to buy. It's a peer-to-peer space — me sharing what I'm learning, others sharing what they know, and all of us building something better together.</p>
+        <p style="color: var(--mid-grey); font-style: italic;">If you have something to add — a resource, a correction, a story, an idea — reach out. This is yours as much as it is mine.</p>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- ── Footer ────────────────────────────────────────────────── -->
   <footer>
     <div class="footer__inner">
       <div class="footer__top">
         <div class="footer__brand">
-          <a href="index.html" class="nav__logo">Spectrum Kids Hub</a>
+          <a href="index.html" class="nav__logo"><span class="nav__logo-dot"></span> Spectrum Kids Hub</a>
           <p>Real support for real families</p>
         </div>
-        <div class="footer__nav">
+        <div class="footer__col">
           <h4>Pages</h4>
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -190,9 +288,19 @@
             <li><a href="community.html">Community</a></li>
           </ul>
         </div>
+        <div class="footer__col">
+          <h4>Crisis support</h4>
+          <ul>
+            <li><a href="toolkit.html#crisis">Samaritans — 116 123</a></li>
+            <li><a href="toolkit.html#crisis">NHS 111</a></li>
+            <li><a href="toolkit.html#crisis">YoungMinds Parents</a></li>
+            <li><a href="toolkit.html#crisis">Childline — 0800 1111</a></li>
+          </ul>
+        </div>
       </div>
+      <hr class="footer__divider">
       <div class="footer__disclaimer">
-        <p><em>Spectrum Kids Hub is an information and signposting resource for parents. Nothing on this site constitutes medical advice. Always consult your GP or a qualified health professional with concerns about your child. All UK resources listed were verified as live and current in March 2026. If you find a link that no longer works, please contact us.</em></p>
+        <em>Spectrum Kids Hub is an information and signposting resource for parents. Nothing on this site constitutes medical advice. Always consult your GP or a qualified health professional with concerns about your child. All UK resources listed were verified as live and current in March 2026. If you find a link that no longer works, please contact us.</em>
         <p class="footer__nutricore">Nutritional support by <a href="https://nutricore.health" target="_blank" rel="noopener">Nutricore Health</a></p>
       </div>
     </div>
