@@ -290,6 +290,8 @@ strong { font-weight: 700; }
 .hero--page {
   padding: 4rem 1.5rem 3.5rem;
   background: var(--teal-dark);
+  background-size: cover;
+  background-position: center;
 }
 .hero--page .hero__inner {
   grid-template-columns: 1fr;
@@ -298,11 +300,33 @@ strong { font-weight: 700; }
   justify-items: center;
 }
 .hero--page .hero__lead { margin: 0 auto 1.5rem; }
-.hero--understanding { background: var(--understanding); }
-.hero--reallife      { background: var(--reallife); }
-.hero--toolkit       { background: var(--toolkit); }
-.hero--nourish       { background: var(--nourish); }
-.hero--community     { background: var(--community); }
+
+/* Inner page heroes with background images + colour overlay */
+.hero--understanding {
+  background-color: var(--understanding);
+  background-image: linear-gradient(rgba(85,60,154,0.82), rgba(85,60,154,0.82)), url('images/understanding-hero.jpg');
+  background-size: cover; background-position: center;
+}
+.hero--reallife {
+  background-color: var(--reallife);
+  background-image: linear-gradient(rgba(192,57,43,0.80), rgba(192,57,43,0.80)), url('images/reallife-hero.jpg');
+  background-size: cover; background-position: center;
+}
+.hero--toolkit {
+  background-color: var(--toolkit);
+  background-image: linear-gradient(rgba(211,84,0,0.80), rgba(211,84,0,0.80)), url('images/toolkit-card.jpg');
+  background-size: cover; background-position: center;
+}
+.hero--nourish {
+  background-color: var(--nourish);
+  background-image: linear-gradient(rgba(27,94,32,0.80), rgba(27,94,32,0.80)), url('images/nourish-hero.jpg');
+  background-size: cover; background-position: center;
+}
+.hero--community {
+  background-color: var(--community);
+  background-image: linear-gradient(rgba(136,14,79,0.80), rgba(136,14,79,0.80)), url('images/community-hero.jpg');
+  background-size: cover; background-position: center;
+}
 
 @media (max-width: 720px) {
   .hero { padding: 4rem 1.25rem 3.5rem; }
